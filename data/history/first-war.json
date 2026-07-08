@@ -1,0 +1,167 @@
+{
+  "meta": {
+    "title": "La Première Guerre",
+    "subtitle": "L'arrivée des Orcs sur Azeroth et la chute de Hurlevent",
+    "era": "Première Guerre",
+    "order": 1,
+    "startYear": 0,
+    "endYear": 4
+  },
+  "timeline": [
+    {
+      "id": "event-1",
+      "date": "-45",
+      "dateLabel": "45 ans avant l'ouverture du Portail",
+      "title": "La Corruption de Medivh",
+      "description": "Le Gardien de Tirisfal, Medivh, est possédé par le Seigneur démoniaque Sargeras alors qu'il n'est encore qu'un enfant. Cette corruption silencieuse mettra des décennies à se manifester pleinement, mais elle scelle le destin de deux mondes.",
+      "type": "major",
+      "characterIds": ["medivh", "sargeras"]
+    },
+    {
+      "id": "event-2",
+      "date": "-15",
+      "dateLabel": "15 ans avant l'ouverture du Portail",
+      "title": "Naissance de la Horde Draenor",
+      "description": "Gul'dan, le premier mortel à maîtriser la magie démoniaque, devient le chef spirituel des Orcs. Sous l'influence de Kil'jaeden, il unit les clans orcs en une seule Horde. Les Orcs boivent le sang de Mannoroth et se transforment en une armée assoiffée de destruction.",
+      "type": "major",
+      "characterIds": ["guldan", "orgrim", "blackhand"]
+    },
+    {
+      "id": "event-3",
+      "date": "0",
+      "dateLabel": "An 0 — L'Ouverture du Portail des Ténèbres",
+      "title": "L'Ouverture du Portail des Ténèbres",
+      "description": "Guidé par la volonté de Sargeras, Medivh ouvre un portail dimensionnel entre Draenor et Azeroth dans les marécages de la Noirmarche. Gul'dan et la Horde déferlent sur le royaume de Hurlevent. La Première Guerre commence.",
+      "type": "major",
+      "characterIds": ["medivh", "guldan", "sargeras"]
+    },
+    {
+      "id": "event-4",
+      "date": "0",
+      "dateLabel": "An 0 — Juste après l'ouverture",
+      "title": "Le Premier Contact",
+      "description": "Les premières escarmouches entre les Orcs et les humains de Hurlevent éclatent. Sir Anduin Lothar, Commandant Suprême des armées de Hurlevent, mène la défense du royaume. Le Roi Llane Wrynn refuse de croire à la menace démoniaque derrière cette invasion.",
+      "type": "major",
+      "characterIds": ["lothar", "llane"]
+    },
+    {
+      "id": "event-5",
+      "date": "2",
+      "dateLabel": "An 2",
+      "title": "La Chute de la Tour de Karazhan",
+      "description": "Khadgar, l'apprenti de Medivh, découvre la trahison du Gardien. Accompagné de Lothar et de Garona, il affronte Medivh dans sa tour de Karazhan. Lothar tue Medivh, mettant fin à la corruption de Sargeras, mais le Portail des Ténèbres reste ouvert.",
+      "type": "major",
+      "characterIds": ["medivh", "lothar", "khadgar", "garona"]
+    },
+    {
+      "id": "event-6",
+      "date": "3",
+      "dateLabel": "An 3",
+      "title": "L'Alliance de Lordaeron",
+      "description": "Face à la menace croissante, Lothar se rend au nord pour rallier les royaumes humains. Le Roi Terenas Menethil II de Lordaeron convoque un sommet historique. Les royaumes de Lordaeron, Kul Tiras, Stromgarde, Gilnéas et Alterac forment l'Alliance.",
+      "type": "major",
+      "characterIds": ["lothar", "llane"]
+    },
+    {
+      "id": "event-7",
+      "date": "4",
+      "dateLabel": "An 4 — La Fin de la Première Guerre",
+      "title": "L'Assassinat du Roi Llane et la Chute de Hurlevent",
+      "description": "Alors que les Orcs envahissent Hurlevent, Garona — contrôlée mentalement par Gul'dan — assassine le Roi Llane Wrynn de sa propre main. La capitale tombe. Lothar, apprenant la nouvelle, jure vengeance et organise l'exode des survivants vers Lordaeron. C'est la fin de la Première Guerre.",
+      "type": "major",
+      "characterIds": ["llane", "garona", "guldan", "lothar"]
+    }
+  ],
+  "characters": [
+    {
+      "id": "guldan",
+      "name": "Gul'dan",
+      "title": "Le Traître, Premier Sorcier Orc",
+      "description": "Premier mortel à maîtriser la magie démoniaque, Gul'dan est l'architecte de la chute des Orcs. Corrompu par Kil'jaeden, il manipule la Horde, ouvre le Portail des Ténèbres, et trahit son propre peuple par soif de pouvoir. Son crâne deviendra un artefact légendaire.",
+      "race": "Orc",
+      "faction": "Horde",
+      "role": "antagonist",
+      "class": "Démoniste"
+    },
+    {
+      "id": "medivh",
+      "name": "Medivh",
+      "title": "Le Gardien de Tirisfal, le Prophète Corrompu",
+      "description": "Dernier Gardien de Tirisfal, Medivh est corrompu à la naissance par Sargeras. Bien que doté d'un pouvoir immense, il devient la marionnette du Seigneur démoniaque et ouvre la voie à l'invasion orc. Tué par son ami Lothar, il sera plus tard ressuscité pour guider les héros d'Azeroth.",
+      "race": "Humain",
+      "faction": "Alliance (corrompu)",
+      "role": "antagonist",
+      "class": "Mage"
+    },
+    {
+      "id": "sargeras",
+      "name": "Sargeras",
+      "title": "Le Titan Noir, le Destructeur des Mondes",
+      "description": "Autrefois un Titan chargé de protéger l'univers des démons, Sargeras sombre dans la folie et devient le plus grand fléau cosmique. Il orchestre la corruption de Medivh et la chute d'Azeroth depuis l'ombre, cherchant à purger le monde de ses imperfections.",
+      "race": "Titan",
+      "faction": "Légion Ardente",
+      "role": "antagonist",
+      "class": null
+    },
+    {
+      "id": "lothar",
+      "name": "Anduin Lothar",
+      "title": "Le Lion d'Azeroth, Commandant Suprême",
+      "description": "Dernier descendant de la lignée des rois d'Arathi, Anduin Lothar est le plus grand chevalier de Hurlevent. Ami d'enfance de Medivh et conseiller du Roi Llane, il devient le Commandant Suprême des armées de l'Alliance. Symbole d'honneur et de résistance face à la Horde.",
+      "race": "Humain",
+      "faction": "Alliance",
+      "role": "protagonist",
+      "class": "Guerrier"
+    },
+    {
+      "id": "llane",
+      "name": "Roi Llane Wrynn Ier",
+      "title": "Roi de Hurlevent, le Martyr",
+      "description": "Roi juste et aimé de Hurlevent, Llane Wrynn règne avec sagesse pendant l'invasion orc. Refusant d'abandonner son peuple, il meurt assassiné par Garona dans les dernières heures de la Première Guerre. Sa mort marque la chute de Hurlevent.",
+      "race": "Humain",
+      "faction": "Alliance",
+      "role": "protagonist",
+      "class": "Guerrier"
+    },
+    {
+      "id": "garona",
+      "name": "Garona",
+      "title": "La Demi-Orc, l'Assassin",
+      "description": "Fille d'une captive humaine et d'un chef orc, Garona est une espionne et assassine légendaire. Esclave de Gul'dan, elle est forcée de tuer le Roi Llane qu'elle respectait. Sa culpabilité hantera les relations entre la Horde et l'Alliance pour des générations.",
+      "race": "Demi-Orc",
+      "faction": "Horde",
+      "role": "tragique",
+      "class": "Voleuse"
+    },
+    {
+      "id": "orgrim",
+      "name": "Orgrim Doomhammer",
+      "title": "Le Marteau du Destin, Chef de la Horde",
+      "description": "Chef du clan des Loups-de-Givre, Orgrim est l'un des rares Orcs à s'être opposé à la corruption démoniaque. Après la mort de Blackhand, il devient le nouveau Chef de guerre de la Horde. Son marteau légendaire, le Marteau du Destin, symbolise le pouvoir de la Horde.",
+      "race": "Orc",
+      "faction": "Horde",
+      "role": "antagonist",
+      "class": "Guerrier"
+    },
+    {
+      "id": "blackhand",
+      "name": "Blackhand",
+      "title": "Premier Chef de Guerre de la Horde",
+      "description": "Chef du clan des Marteaux-Hardis, Blackhand est placé à la tête de la Horde par Gul'dan comme une marionnette. Brutal mais peu stratégique, il est finalement tué par Orgrim Doomhammer qui revendique légitimement le titre de Chef de guerre.",
+      "race": "Orc",
+      "faction": "Horde",
+      "role": "antagonist",
+      "class": "Guerrier"
+    },
+    {
+      "id": "khadgar",
+      "name": "Khadgar",
+      "title": "L'Apprenti, le Sage de Karazhan",
+      "description": "Jeune prodige de la magie, Khadgar devient l'apprenti de Medivh sans connaître sa corruption. C'est lui qui découvre la vérité et permet la défaite du Gardian. Son sacrifice de jeunesse pour vaincre Medivh le marquera à jamais.",
+      "race": "Humain",
+      "faction": "Alliance",
+      "role": "protagonist",
+      "class": "Mage"
+    }
+  ]
+}

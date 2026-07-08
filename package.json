@@ -1,0 +1,23 @@
+{
+  "name": "wow-fansite",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Fansite dynamique pour World of Warcraft avec l'API Blizzard",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve . -p 3000",
+    "test": "vitest",
+    "test:run": "vitest run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.1.1",
+    "dotenv": "^16.4.5",
+    "jsdom": "^26.0.0",
+    "msw": "^2.7.0",
+    "vitest": "^3.0.0"
+  }
+}

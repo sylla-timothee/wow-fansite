@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Histoire — La Première Guerre | WoW Fansite</title>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="main-nav">
+      <a href="index.html" class="logo">WoW Fansite</a>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="history.html" class="active">Histoire</a></li>
+        <li><a href="univers.html">Univers</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="history-page">
+    <header id="era-header">
+      <h1></h1>
+      <p class="era-subtitle"></p>
+      <p class="era-date"></p>
+    </header>
+
+    <section id="timeline"></section>
+    <section id="characters"></section>
+
+    <div id="error-container" class="hidden">
+      <p id="error-message"></p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 WoW Fansite &mdash; Projet personnel non officiel</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/history.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (typeof loadHistory === 'function') {
+        loadHistory();
+      }
+    });
+  </script>
+</body>
+</html>
