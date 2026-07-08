@@ -1,43 +1,31 @@
-﻿# wow-fansite
 ```
-Architecture : 
-
 wow-fansite/
-├── index.html                               # Accueil
-├── pages/
-│   ├── character/
-│   │   ├── index.html                       # Liste de tous les personnages
-│   │   ├── arthas.html                      # Page spécifique
-│   │   └── jaina.html
-│   ├── univers/
-│   │   ├── index.html                       # Présentation globale (Magie, Panthéon)
-│   │   ├── classes/                         #présentation de toutes les classes
-│   │   │   ├── warrior.html
-│   │   │   ├── paladin.html
-│   │   └──factions.html
-│   └── history/
-│       ├── index.html                       # Chronologie générale
-│       └── guerre-anciens.html              # Un évènement précis
-├── assets/
-│   ├── img/
-│   │   ├── ui/                              # Boutons, cadres etc...
-│   │   ├── characters/                      # Portraits des personnages.
-│   │   ├── regions/                         # Fanart des régions d'Azeroth
-│   │   └── icons/                           # Icônes de classes ou de sorts
+├── index.html                   # Accueil du site
+├── character.html               # Page UNIQUE pour TOUS les personnages (ex: character.html?name=Arthas&realm=Hyjal)
+├── univers.html                 # Page pour l'univers et les classes
+├── history.html                 # Chronologie générale
+│
+├── api/                         # 🛡️ ZONE SÉCURISÉE (Serverless - S'exécute côté serveur)
+│   ├── get-token.js             # Échange secrètement le Client ID + Secret contre le Jeton Blizzard
+│   └── get-character.js         # Reçoit la demande du navigateur, y ajoute le Jeton et interroge Blizzard
+│
+├── js/                          # 🌐 ZONE PUBLIQUE (S'exécute dans le navigateur de l'utilisateur)
+│   ├── app.js                   # Gestion globale (navigation, chargement des en-têtes)
+│   ├── character.js             # Extrait les paramètres de l'URL, appelle l'API locale, et remplit character.html
+│   └── univers.js               # Récupère et affiche dynamiquement les données des classes
+│
 ├── css/
-│    ├── style.css                           # Sommaire du CSS qui import tout les autres
-│    ├── global.css                          # Reset (marges par défaut), polices, variables
-│    ├── layout.css                          # Structure : Header, Footer, Menu de navigation
-│    │── components/                         # Éléments réutilisables
-│    │    ├── character-card.css             # Le style des petites cartes de personnages
-│    │    ├── character-profile.css          # Le style pour la page détaillée d'un héros
-│    │    └── history-timeline.css           # CSS pour les pages histoires
-└── js/
-├── main.js                  # Script principal (chargé sur toutes les pages)
-├── components/              # Scripts spécifiques à des éléments
-│   ├── navbar.js            # Gère le menu mobile (hamburger)
-│   ├── timeline.js          # Effets visuels sur la chronologie
-│   └── audio-player.js      # Si vous voulez mettre la musique de Hurlevent !
-└── utils/
-    └── template-loader.js   # Script pour injecter le Header/Footer automatiquement
+│   ├── style.css                # Centralise les imports
+│   ├── global.css               # Variables magiques, polices WoW, reset
+│   ├── layout.css               # Structure (Header, Footer, Grille Kanban si besoin)
+│   └── components/
+│       ├── character-sheet.css  # Design de la fiche de personnage dynamique
+│       └── class-card.css       # Design des cartes de classes
+│
+├── assets/
+│   └── img/
+│       └── ui/                  # Textures locales (cadres dorés, curseurs WoW, etc.)
+│
+├── .env                         # Fichier secret
+└── .gitignore                   # Indique à Git de ne JAMAIS envoyer le fichier .env sur internet
 ```
