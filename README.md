@@ -33,4 +33,11 @@ wow-fansite/
 │    │    ├── character-profile.css          # Le style pour la page détaillée d'un héros
 │    │    └── history-timeline.css           # CSS pour les pages histoires
 └── js/
+├── main.js                  # Script principal (chargé sur toutes les pages)
+├── components/              # Scripts spécifiques à des éléments
+│   ├── navbar.js            # Gère le menu mobile (hamburger)
+│   ├── timeline.js          # Effets visuels sur la chronologie
+│   └── audio-player.js      # Si vous voulez mettre la musique de Hurlevent !
+└── utils/
+    └── template-loader.js   # Script pour injecter le Header/Footer automatiquement
 ```
